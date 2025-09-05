@@ -1,0 +1,24 @@
+.venv/
+env-dino/
+
+# Ignore dataset files
+dataset/
+
+dino-soja/outputs/
+
+# Repositórios dos modelos
+dino-soja/dino/
+dino-soja/dinov3/
+
+mae-soja/data/
+mae-soja/docs/
+mae-soja/env-mae/
+mae-soja/logs/
+mae-soja/mae/
+mae-soja/predicion_ortophoto/
+mae-soja/models/modelo_final/test/
+mae-soja/*.md
+mae-soja/.vscode/
+mae-soja/*.pyc
+
+mmsegmentation/

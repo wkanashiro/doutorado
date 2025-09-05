@@ -1,0 +1,18 @@
+# PyTorch compatível com MAE original + RTX 4090 (CUDA 11.8)
+torch==1.11.0+cu113
+torchvision==0.12.0+cu113
+torchaudio==0.11.0
+
+# MAE depende dessa versão exata
+timm==0.3.2
+
+# Outras dependências padrão
+numpy==1.23.5
+matplotlib
+scipy
+h5py
+scikit-learn
+pandas
+tensorboard
+opencv-python
+

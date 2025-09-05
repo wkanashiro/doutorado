@@ -1,0 +1,56 @@
+# Ambientes virtuais
+env-mae/
+venv/
+.env
+
+# Dados grandes (modelos e resultados)
+models/modelo_final/*.pth
+data/output/
+data/input/ortofotos_soja/
+data/input/daninhas_multiclasse2/
+data/input/daninhas_multiclasse2.zip
+
+# Logs
+logs/
+*.log
+
+# Cache Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Temporários
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Frameworks específicos
+mae/__pycache__/
+mae/
+mmsegmentation/__pycache__/
+mmsegmentation/.git/
+mmsegmentation/build/
+mmsegmentation/dist/
+mmsegmentation/*.egg-info/
+mmsegmentation/
+
+# Documentação
+*.md
+docs/*.md
