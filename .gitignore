@@ -8,7 +8,48 @@ dino-soja/outputs/
 
 # Repositórios dos modelos
 dino-soja/dino/
-dino-soja/dinov3/
+
+**/workflows
+
+*.pyc
+**/.pkl
+
+**/.png
+*.png
+
+**/outputs/
+**/output*/
+
+
+local_dino/
+
+build/
+dist/
+*.egg-info/
+**/__pycache__/
+
+**/.ipynb_checkpoints
+**/.ipynb_checkpoints/**
+
+**/notebooks/**
+
+outputs/
+output*/
+
+# Ignore shell scripts
+*.sh
+
+# Ignore swap files
+*.swp
+
+**/teste/
+**/gerar_patches.py
+**/gerar_patches.log
+
+**/pca_soja_results.pkl
+
+# Ignore vscode directory
+.vscode
 
 mae-soja/data/
 mae-soja/docs/
