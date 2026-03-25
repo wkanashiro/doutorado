@@ -48,8 +48,8 @@ class MaybeToTensor(transforms.ToTensor):
 
 
 # Use timm's names
-IMAGENET_DEFAULT_MEAN = (0.485, 0.456, 0.406)
-IMAGENET_DEFAULT_STD = (0.229, 0.224, 0.225)
+IMAGENET_DEFAULT_MEAN = (0.430, 0.411, 0.296) #(0.485, 0.456, 0.406) # (0.485, 0.456, 0.406) é o valor padrão do ImageNet
+IMAGENET_DEFAULT_STD = (0.213, 0.156, 0.143) #(0.229, 0.224, 0.225) # (0.229, 0.224, 0.225) é o valor padrão do ImageNet
 
 CROP_DEFAULT_SIZE = 224
 RESIZE_DEFAULT_SIZE = int(256 * CROP_DEFAULT_SIZE / 224)
