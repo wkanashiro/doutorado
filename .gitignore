@@ -6,13 +6,15 @@ dataset/
 
 dino-soja/outputs/
 
+pretrained_models/
+
 # Repositórios dos modelos
 dino-soja/dino/
 
 **/workflows
 
 *.pyc
-**/.pkl
+*.pkl
 
 **/.png
 *.png
@@ -63,3 +65,5 @@ mae-soja/.vscode/
 mae-soja/*.pyc
 
 mmsegmentation/
+
+topicos-visao/best_model*
