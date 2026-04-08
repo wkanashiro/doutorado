@@ -60,3 +60,6 @@ colorlog
 #    pip install mmcv-full==1.5.0 -f https://download.openmmlab.com/mmcv/dist/cu113/torch1.11.0/index.html
 #    pip install mmsegmentation==0.20.2
 # =============================================================================
+
+
+python plotar_loss.py --log_path "/home/guatambu/Documentos/kanashiro/doutorado/mmsegmentation/work_dirs/dinov3_vitl_daninhas_com_dino_pretreinado_6M/20260326_153821/vis_data/scalars.json" --save_path "/home/guatambu/Documentos/kanashiro/doutorado/mmsegmentation/work_dirs/dinov3_vitl_daninhas_com_dino_pretreinado_6M/grafico_loss.png"

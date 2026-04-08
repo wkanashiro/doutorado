@@ -1,0 +1,23 @@
+# Cria o ambiente isolado com Python 3.9
+conda create --name kana-mmseg python=3.9 -y
+conda activate kana-mmseg
+
+# Instala o PyTorch compatível com a maioria das GPUs de servidor (RTX 30/40 series)
+pip install torch==2.1.0 torchvision==0.16.0 --index-url https://download.pytorch.org/whl/cu118
+
+# Instala o gerenciador de pacotes oficial e as bibliotecas base
+pip install -U openmim
+mim install mmengine
+# IMPORTANTE: Versão do MMCV blindada contra o erro de AssertionError
+mim install "mmcv>=2.0.0rc4,<2.2.0"
+
+# Navegue até sua pasta de trabalho antes de clonar
+git clone https://github.com/open-mmlab/mmsegmentation.git
+cd mmsegmentation
+pip install -v -e .
+
+# Resolve o conflito do NumPy 2.0 e do OpenCV 4.13
+pip install "numpy<2.0" "opencv-python<4.11"
+
+# Executar para confirmar se a GPU e o Framework estão conversando
+python -c "import mmseg; print('Versão do MMseg:', mmseg.__version__); import torch; print('GPU disponível:', torch.cuda.is_available())"
